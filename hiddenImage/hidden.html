@@ -2,15 +2,22 @@
     var v = 0;
     function hide(){
      
-        if(v  ==0){
+    if(v  ==0){
         var img= document.getElementById("myP")
         img.style.visibility = "hidden";
+        var b = document.getElementById("mb1")
+        b.innerHTML = "Show image";
         v = 1;
-        }else{
+        
+
+    }else{
             var img= document.getElementById("myP")
             img.style.visibility = "visible";
+            var b = document.getElementById("mb1")
+            b.innerHTML = "Hide image";
             v = 0;
-        }
+
+    }
         
     }
     
@@ -19,7 +26,7 @@
 <body>
     <img src = "vb.jpg" id = "myP" height = 500px />
     <br>
-    <button onclick = "hide()" >  Hiddddde me </button>
+    <button id = "mb1" onclick = "hide()" >  Hiddddde me </button>
 
 
 </body>
