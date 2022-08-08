@@ -27,10 +27,13 @@
     function stop(){
         clearTimeout(r); // to stop the blinking of the image, and clearing of setTimeout function
     }
+
+    
     
 </script>
+ <!-- if we want that the image starts blinking as soon as the page is loaded we use ONCLICK event. -->
 
-<body>
+<body onload ="hide()">  
     <img src = "vb.jpg" id = "myP" height = 500px />
     <br>
     <button id = "mb1" onclick = "hide()" >  Hiddddde me </button>
